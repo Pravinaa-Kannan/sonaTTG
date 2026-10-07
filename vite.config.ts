@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
       usePolling: true,
     },
   },
+  envPrefix: ['VITE_', 'NEXT_PUBLIC_'],
   plugins: [
     react(),
     mode === 'development' &&
